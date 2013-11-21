@@ -18,6 +18,7 @@ OBJS = \
 	spinlock.o\
 	string.o\
 	swtch.o\
+	dummy_val.o\
 	syscall.o\
 	sysfile.o\
 	sysproc.o\
@@ -170,6 +171,7 @@ UPROGS=\
 	_usertests\
 	_wc\
 	_zombie\
+	_dummy_test
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)
